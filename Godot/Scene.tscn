@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=3 uid="uid://vhdko8l17uv"]
+[gd_scene load_steps=43 format=3 uid="uid://vhdko8l17uv"]
 
 [ext_resource type="Texture2D" uid="uid://du0tmc1cn7605" path="res://Godot/Floor Texture/brown_mud_leaves_01_diff_4k.png" id="1_h5mbe"]
 [ext_resource type="PackedScene" uid="uid://ceqtj0h8xlikr" path="res://Godot/3D Models/Trees/pine_tree/pine_tree.gltf" id="1_ikqqh"]
@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bno11b6q88igq" path="res://Godot/Floor Texture/brown_mud_leaves_01_nor_gl_4k.png" id="2_oq70o"]
 [ext_resource type="Texture2D" uid="uid://i5wb1aee5uce" path="res://Godot/Floor Texture/brown_mud_leaves_01_rough_4k.png" id="3_rn6aq"]
 [ext_resource type="PackedScene" uid="uid://c0tq6tq44nkow" path="res://Godot/3D Models/Structures (Buildings)/abandoned_house/ahouse.gltf" id="5_deoi7"]
+[ext_resource type="PackedScene" uid="uid://buoonxor8bpc4" path="res://Godot/3D Models/basic_kermit_2.0/character.gltf" id="5_okk4d"]
 [ext_resource type="PackedScene" uid="uid://cm3a3x7b627vp" path="res://Godot/3D Models/Trees/tree_gn/tree.gltf" id="6_58odc"]
 [ext_resource type="PackedScene" uid="uid://f5x57hjadkgl" path="res://Godot/3D Models/Trees/old_tree/old_tree.gltf" id="8_uebl8"]
 [ext_resource type="PackedScene" uid="uid://dwmspwm1aluxu" path="res://Godot/3D Models/Structures (Objects)/abandoned_car/acar.gltf" id="9_kt421"]
@@ -23,6 +24,8 @@
 [ext_resource type="PackedScene" uid="uid://6i24yoew12sp" path="res://Godot/3D Models/Structures (Objects)/Tents/tent (2)/Tent3.gltf" id="20_tbv0s"]
 [ext_resource type="PackedScene" uid="uid://dss778vm6l8b5" path="res://Godot/3D Models/Structures (Objects)/Tents/tent (3)/tent4.gltf" id="21_l1jdb"]
 [ext_resource type="PackedScene" uid="uid://y6gwmncksdjn" path="res://Godot/3D Models/Structures (Objects)/Tents/tent (4)/tent5.gltf" id="22_2tas3"]
+[ext_resource type="PackedScene" uid="uid://ufv383qfj7y3" path="res://Godot/3D Models/tv/tv.gltf" id="24_cktin"]
+[ext_resource type="Script" path="res://Godot/Enemy.gd" id="25_vtu4t"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_r2lmd"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -38,6 +41,8 @@ sky = SubResource("Sky_7cye2")
 ambient_light_color = Color(0.0784314, 0, 0.360784, 1)
 ambient_light_energy = 0.5
 tonemap_mode = 2
+glow_enabled = true
+glow_intensity = 6.05
 fog_enabled = true
 fog_light_color = Color(0.12549, 0.105882, 0.152941, 1)
 fog_light_energy = 0.5
@@ -68,6 +73,33 @@ points = PackedVector3Array(0.381273, 0.68024, 0.0854862, -0.386297, -0.677896, 
 [sub_resource type="BoxShape3D" id="BoxShape3D_dcnls"]
 size = Vector3(333, 165.782, 1)
 
+[sub_resource type="PlaneMesh" id="PlaneMesh_01bik"]
+size = Vector2(192, 108)
+orientation = 2
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_rj6eb"]
+viewport_path = NodePath("TV Model/MeshInstance3D/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_17q6h"]
+viewport_path = NodePath("TV Model/MeshInstance3D/SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mqqmw"]
+resource_local_to_scene = true
+albedo_texture = SubResource("ViewportTexture_rj6eb")
+emission_enabled = true
+emission_energy_multiplier = 0.5
+emission_texture = SubResource("ViewportTexture_17q6h")
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_0a2sk"]
+file = "res://Videos/Darkwood Welcome 2.ogv"
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_b4lag"]
+size = Vector3(1465, 10000, 806)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_a7f0h"]
+height = 6.0
+radius = 1.0
+
 [node name="Scene" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -76,7 +108,7 @@ environment = SubResource("Environment_nrph2")
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
 light_color = Color(0.52549, 0.54902, 1, 1)
-light_energy = 0.2
+light_energy = 0.1
 shadow_enabled = true
 
 [node name="Ground" type="MeshInstance3D" parent="."]
@@ -88,7 +120,7 @@ mesh = SubResource("PlaneMesh_3wqea")
 shape = SubResource("ConcavePolygonShape3D_u0r0u")
 
 [node name="Player" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.67277, 3.21441, 84.1806)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.673, 2, 84.181)
 script = ExtResource("1_mjpwb")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
@@ -2119,3 +2151,41 @@ transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 20, 0, -71)
 
 [node name="Campfire2" parent="Structures/Campsite 5" instance=ExtResource("19_gyrhb")]
 transform = Transform3D(0.01, 0, 0, 0, 0.01, 0, 0, 0, 0.01, 40, 0, -71)
+
+[node name="TV Model" parent="." instance=ExtResource("24_cktin")]
+transform = Transform3D(3.57746e-11, 0, -0.003, 0, 0.003, 0, 0.003, 0, 3.57746e-11, 9, 0.8, 81)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="TV Model"]
+transform = Transform3D(1.66667, 0, -9.27271e-08, 0, 1.66667, 0, 9.27271e-08, 0, 1.66667, 0, 0.999969, 209.6)
+mesh = SubResource("PlaneMesh_01bik")
+surface_material_override/0 = SubResource("StandardMaterial3D_mqqmw")
+
+[node name="SubViewport" type="SubViewport" parent="TV Model/MeshInstance3D"]
+size = Vector2i(1920, 1080)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="TV Model/MeshInstance3D/SubViewport"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="TV Model/MeshInstance3D/SubViewport/SubViewportContainer"]
+layout_mode = 2
+stream = SubResource("VideoStreamTheora_0a2sk")
+autoplay = true
+
+[node name="Area3D" type="Area3D" parent="TV Model"]
+transform = Transform3D(1, 0, 8.88178e-16, 0, 1, 0, -8.88178e-16, 0, 1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TV Model/Area3D"]
+transform = Transform3D(1, 0, -8.88178e-16, 0, 1, 0, 8.88178e-16, 0, 1, 0, 0, 500)
+shape = SubResource("BoxShape3D_b4lag")
+
+[node name="Enemy" type="CharacterBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -30, 3, -51)
+script = ExtResource("25_vtu4t")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Enemy"]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 0, 0)
+shape = SubResource("CylinderShape3D_a7f0h")
+
+[node name="Kermi" parent="Enemy" instance=ExtResource("5_okk4d")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 1, 0.0999985)
