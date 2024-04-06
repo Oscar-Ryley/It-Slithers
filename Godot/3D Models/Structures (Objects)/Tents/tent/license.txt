@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tent
+* source:	https://sketchfab.com/3d-models/tent-441936f01497461cb226624da9a168db
+* author:	Arkikon (https://sketchfab.com/ragnar)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tent" (https://sketchfab.com/3d-models/tent-441936f01497461cb226624da9a168db) by Arkikon (https://sketchfab.com/ragnar) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

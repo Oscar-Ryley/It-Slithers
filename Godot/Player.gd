@@ -1,8 +1,8 @@
 extends CharacterBody3D
 
 
-const SPEED = 1.0
-const JUMP_VELOCITY = 0.5
+const SPEED = 7.0
+const JUMP_VELOCITY = 1.0
 
 # Get the gravity from the project settings to be synced with RigidBody nodes.
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
@@ -22,7 +22,7 @@ func _unhandled_input(event: InputEvent) -> void:
 			camera.rotation.x = clamp(camera.rotation.x, deg_to_rad(-30), deg_to_rad(60))
 
 
-func _physics_process(delta):
+func _physics_process(delta):	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity.y -= gravity * delta

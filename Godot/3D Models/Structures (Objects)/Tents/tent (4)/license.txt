@@ -1,0 +1,11 @@
+Model Information:
+* title:	tent
+* source:	https://sketchfab.com/3d-models/tent-79b6315d09384e8180e40e179568915b
+* author:	Joe (https://sketchfab.com/jhepic)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "tent" (https://sketchfab.com/3d-models/tent-79b6315d09384e8180e40e179568915b) by Joe (https://sketchfab.com/jhepic) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

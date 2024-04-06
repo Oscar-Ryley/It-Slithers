@@ -1,0 +1,11 @@
+Model Information:
+* title:	Abandoned Car
+* source:	https://sketchfab.com/3d-models/abandoned-car-c25ccc5a116342218d02dd57607e3f71
+* author:	Leandro Andrade (https://sketchfab.com/LeandroAndrade)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Abandoned Car" (https://sketchfab.com/3d-models/abandoned-car-c25ccc5a116342218d02dd57607e3f71) by Leandro Andrade (https://sketchfab.com/LeandroAndrade) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
