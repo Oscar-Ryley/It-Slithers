@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tent
+* source:	https://sketchfab.com/3d-models/tent-9006af5d7af4491dbb573fdddaf8b30b
+* author:	Tactical_Gamer (https://sketchfab.com/Tactical_Beard)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tent" (https://sketchfab.com/3d-models/tent-9006af5d7af4491dbb573fdddaf8b30b) by Tactical_Gamer (https://sketchfab.com/Tactical_Beard) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

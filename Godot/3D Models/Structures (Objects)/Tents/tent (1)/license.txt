@@ -1,0 +1,11 @@
+Model Information:
+* title:	Tent
+* source:	https://sketchfab.com/3d-models/tent-fa46028e8d3849399ba5271df07ed99c
+* author:	Gajk.Mv (https://sketchfab.com/Gajk.Mv)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Tent" (https://sketchfab.com/3d-models/tent-fa46028e8d3849399ba5271df07ed99c) by Gajk.Mv (https://sketchfab.com/Gajk.Mv) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

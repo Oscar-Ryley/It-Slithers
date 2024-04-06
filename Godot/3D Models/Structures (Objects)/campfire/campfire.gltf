@@ -1,0 +1,278 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 24607,
+      "max": [
+        91.42841339111328,
+        56.57707214355469,
+        35.49109649658203
+      ],
+      "min": [
+        -23.00198745727539,
+        -43.23665237426758,
+        -92.8841781616211
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 295284,
+      "componentType": 5126,
+      "count": 24607,
+      "max": [
+        0.9995917081832886,
+        0.9998204112052917,
+        0.9975473880767822
+      ],
+      "min": [
+        -0.9999931454658508,
+        -0.9999175667762756,
+        -0.9983960390090942
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 24607,
+      "max": [
+        0.993198037147522,
+        0.9931874871253967
+      ],
+      "min": [
+        0.006801987998187542,
+        0.006812572479248047
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 102240,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "digrafstudio (https://sketchfab.com/digrafstudio)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/campfire-wood-survival-warm-and-light-efd0ac8c5cca46bfaae91b3851b9c75f",
+      "title": "Campfire Wood Survival Warm and Light"
+    },
+    "generator": "Sketchfab-12.66.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 408960,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 196856,
+      "byteOffset": 408960,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 590568,
+      "byteOffset": 605816,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1196384,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "images": [
+    {
+      "uri": "textures/CfWood_diffuse.png"
+    },
+    {
+      "uri": "textures/CfWood_specularGlossiness.png"
+    },
+    {
+      "uri": "textures/CfWood_occlusion.png"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.995617378,
+            0.995617378,
+            0.995617378,
+            1.0
+          ],
+          "diffuseTexture": {
+            "index": 0
+          },
+          "glossinessFactor": 1.0,
+          "specularFactor": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "specularGlossinessTexture": {
+            "index": 1
+          }
+        }
+      },
+      "name": "CfWood",
+      "occlusionTexture": {
+        "index": 2,
+        "strength": 0.7029344512
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "CampFireWood_CfWood_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "CfWood.fbx"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        0.566720468695265,
+        -0.4647790230482257,
+        0.6803002058622031,
+        0.0,
+        0.634135257186904,
+        0.7732221385814682,
+        -1.1102230246251565e-16,
+        0.0,
+        -0.5260231800541856,
+        0.431402346008732,
+        0.7329335780982094,
+        0.0,
+        -39.24223709106445,
+        28.209806442260742,
+        0.0,
+        1.0
+      ],
+      "name": "CampFireWood"
+    },
+    {
+      "mesh": 0,
+      "name": "CampFireWood_CfWood_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 0,
+      "source": 1
+    },
+    {
+      "sampler": 0,
+      "source": 2
+    }
+  ]
+}

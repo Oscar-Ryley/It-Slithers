@@ -1,0 +1,11 @@
+Model Information:
+* title:	Old tree
+* source:	https://sketchfab.com/3d-models/old-tree-3cb4d59eb4844dc4802480e9ee53785e
+* author:	evolveduk (https://sketchfab.com/evolveduk)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Old tree" (https://sketchfab.com/3d-models/old-tree-3cb4d59eb4844dc4802480e9ee53785e) by evolveduk (https://sketchfab.com/evolveduk) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
