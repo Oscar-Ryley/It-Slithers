@@ -34,7 +34,7 @@ transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75
 shadow_enabled = true
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 6, 0, 0, 0)
+transform = Transform3D(13, 0, 0, 0, 13, 0, 0, 0, 13, 0, 0, 0)
 mesh = SubResource("PlaneMesh_3wqea")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="MeshInstance3D"]
@@ -43,7 +43,7 @@ mesh = SubResource("PlaneMesh_3wqea")
 shape = SubResource("ConcavePolygonShape3D_bneew")
 
 [node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5.53105)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 12.4138)
 script = ExtResource("1_mjpwb")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
