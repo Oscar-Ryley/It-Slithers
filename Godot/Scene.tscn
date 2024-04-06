@@ -1,4 +1,4 @@
-[gd_scene load_steps=64 format=3 uid="uid://vhdko8l17uv"]
+[gd_scene load_steps=90 format=3 uid="uid://vhdko8l17uv"]
 
 [ext_resource type="Texture2D" uid="uid://du0tmc1cn7605" path="res://Godot/Floor Texture/brown_mud_leaves_01_diff_4k.png" id="1_h5mbe"]
 [ext_resource type="PackedScene" uid="uid://ceqtj0h8xlikr" path="res://Godot/3D Models/Trees/pine_tree/pine_tree.gltf" id="1_ikqqh"]
@@ -31,6 +31,11 @@
 [ext_resource type="Texture2D" uid="uid://bl5dem71vm444" path="res://Godot/Assets/tv icon.png" id="29_qvdre"]
 [ext_resource type="VideoStream" path="res://Videos/The Fox.ogv" id="30_17fg7"]
 [ext_resource type="Script" path="res://Godot/TV Video 2.gd" id="30_h8vog"]
+[ext_resource type="Script" path="res://Godot/TV Video 3.gd" id="32_vvo5m"]
+[ext_resource type="Script" path="res://Godot/TV Video 4.gd" id="33_ih66l"]
+[ext_resource type="Script" path="res://Godot/TV Video 5.gd" id="34_w048d"]
+[ext_resource type="Script" path="res://Godot/TV Video 6.gd" id="35_ejkp4"]
+[ext_resource type="Script" path="res://Godot/TV Video 7.gd" id="36_6l4dm"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_r2lmd"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -54,6 +59,10 @@ fog_light_energy = 0.5
 fog_density = 0.02
 volumetric_fog_density = 10.0
 volumetric_fog_albedo = Color(0.415686, 0.380392, 0.533333, 1)
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_yqyqe"]
+height = 0.8
+radius = 1.9
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_nyr0o"]
 albedo_texture = ExtResource("1_h5mbe")
@@ -158,6 +167,86 @@ emission_enabled = true
 emission_energy_multiplier = 0.5
 emission_texture = SubResource("ViewportTexture_aquns")
 
+[sub_resource type="ViewportTexture" id="ViewportTexture_oq8px"]
+viewport_path = NodePath("TV 3 - Hare/Tv object 3/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_0y4ti"]
+viewport_path = NodePath("TV 3 - Hare/Tv object 3/SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yg84e"]
+resource_local_to_scene = true
+albedo_texture = SubResource("ViewportTexture_oq8px")
+emission_enabled = true
+emission_energy_multiplier = 0.5
+emission_texture = SubResource("ViewportTexture_0y4ti")
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_hl0rs"]
+file = "res://Videos/The Hare.ogv"
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_pv1re"]
+viewport_path = NodePath("TV 4 - Robin/Tv object 4/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_58lja"]
+viewport_path = NodePath("TV 4 - Robin/Tv object 4/SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_i4oid"]
+resource_local_to_scene = true
+albedo_texture = SubResource("ViewportTexture_pv1re")
+emission_enabled = true
+emission_energy_multiplier = 0.5
+emission_texture = SubResource("ViewportTexture_58lja")
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_vpiyi"]
+file = "res://Videos/The Robin.ogv"
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_l6e35"]
+viewport_path = NodePath("TV 5 - Tawny Owl/Tv object 5/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_6wwgs"]
+viewport_path = NodePath("TV 5 - Tawny Owl/Tv object 5/SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rjwxj"]
+resource_local_to_scene = true
+albedo_texture = SubResource("ViewportTexture_l6e35")
+emission_enabled = true
+emission_energy_multiplier = 0.5
+emission_texture = SubResource("ViewportTexture_6wwgs")
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_7l5rd"]
+file = "res://Videos/The Tawny Owl.ogv"
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_rsd5s"]
+viewport_path = NodePath("TV 6 - Wolf/Tv object 6/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_kqiu1"]
+viewport_path = NodePath("TV 6 - Wolf/Tv object 6/SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mb0ou"]
+resource_local_to_scene = true
+albedo_texture = SubResource("ViewportTexture_rsd5s")
+emission_enabled = true
+emission_energy_multiplier = 0.5
+emission_texture = SubResource("ViewportTexture_kqiu1")
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_tae3t"]
+file = "res://Videos/The Wolf.ogv"
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_2ccb7"]
+viewport_path = NodePath("TV 7 - Final/Tv object 7/SubViewport")
+
+[sub_resource type="ViewportTexture" id="ViewportTexture_lk6s7"]
+viewport_path = NodePath("TV 7 - Final/Tv object 7/SubViewport")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_qe3mj"]
+resource_local_to_scene = true
+albedo_texture = SubResource("ViewportTexture_2ccb7")
+emission_enabled = true
+emission_energy_multiplier = 0.5
+emission_texture = SubResource("ViewportTexture_lk6s7")
+
+[sub_resource type="VideoStreamTheora" id="VideoStreamTheora_midwt"]
+file = "res://Videos/The Final Codex Entry.ogv"
+
 [node name="Scene" type="Node3D"]
 
 [node name="Watched" type="Label" parent="."]
@@ -171,7 +260,7 @@ text = "a"
 script = ExtResource("28_jsebg")
 
 [node name="Sprite2D" type="Sprite2D" parent="Watched"]
-position = Vector2(9, 12)
+position = Vector2(11, 12)
 scale = Vector2(0.1, 0.1)
 texture = ExtResource("29_qvdre")
 
@@ -183,6 +272,13 @@ transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75
 light_color = Color(0.52549, 0.54902, 1, 1)
 light_energy = 0.1
 shadow_enabled = true
+
+[node name="WinArea3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 16, 0, -88.1)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WinArea3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4, 0)
+shape = SubResource("CylinderShape3D_yqyqe")
 
 [node name="Ground" type="MeshInstance3D" parent="."]
 mesh = SubResource("PlaneMesh_3wqea")
@@ -2462,6 +2558,141 @@ transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, 0, 33
 transform = Transform3D(1, 0, -8.88178e-16, 0, 1, 0, 8.88178e-16, 0, 1, 0, 333.333, 1166.67)
 shape = SubResource("CylinderShape3D_rdw8p")
 
+[node name="TV 3 - Hare" parent="." instance=ExtResource("24_cktin")]
+transform = Transform3D(0.000613488, 0, -0.0029366, 0, 0.003, 0, 0.0029366, 0, 0.000613488, 38.5, 0.8, 52.2)
+
+[node name="Tv object 3" type="MeshInstance3D" parent="TV 3 - Hare"]
+transform = Transform3D(1.66667, 0, -9.27271e-08, 0, 1.66667, 0, 9.27271e-08, 0, 1.66667, 0, 0.999969, 209.6)
+mesh = SubResource("PlaneMesh_01bik")
+surface_material_override/0 = SubResource("StandardMaterial3D_yg84e")
+
+[node name="SubViewport" type="SubViewport" parent="TV 3 - Hare/Tv object 3"]
+size = Vector2i(1920, 1080)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="TV 3 - Hare/Tv object 3/SubViewport"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TV Video 3" type="VideoStreamPlayer" parent="TV 3 - Hare/Tv object 3/SubViewport/SubViewportContainer"]
+layout_mode = 2
+stream = SubResource("VideoStreamTheora_hl0rs")
+script = ExtResource("32_vvo5m")
+
+[node name="TV Area 3" type="Area3D" parent="TV 3 - Hare"]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, 0, 333.333)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TV 3 - Hare/TV Area 3"]
+transform = Transform3D(1, 0, -8.88178e-16, 0, 1, 0, 8.88178e-16, 0, 1, 0, 333.333, 1166.67)
+shape = SubResource("CylinderShape3D_rdw8p")
+
+[node name="TV 4 - Robin" parent="." instance=ExtResource("24_cktin")]
+transform = Transform3D(0.00134328, 0, 0.00268246, 0, 0.003, 0, -0.00268246, 0, 0.00134328, 15.7, 0.8, -35.9)
+
+[node name="Tv object 4" type="MeshInstance3D" parent="TV 4 - Robin"]
+transform = Transform3D(1.66667, 0, -9.27271e-08, 0, 1.66667, 0, 9.27271e-08, 0, 1.66667, 0, 0.999969, 209.6)
+mesh = SubResource("PlaneMesh_01bik")
+surface_material_override/0 = SubResource("StandardMaterial3D_i4oid")
+
+[node name="SubViewport" type="SubViewport" parent="TV 4 - Robin/Tv object 4"]
+size = Vector2i(1920, 1080)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="TV 4 - Robin/Tv object 4/SubViewport"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TV Video 4" type="VideoStreamPlayer" parent="TV 4 - Robin/Tv object 4/SubViewport/SubViewportContainer"]
+layout_mode = 2
+stream = SubResource("VideoStreamTheora_vpiyi")
+script = ExtResource("33_ih66l")
+
+[node name="TV Area 4" type="Area3D" parent="TV 4 - Robin"]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, 0, 333.333)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TV 4 - Robin/TV Area 4"]
+transform = Transform3D(1, 0, -8.88178e-16, 0, 1, 0, 8.88178e-16, 0, 1, 0, 333.333, 1166.67)
+shape = SubResource("CylinderShape3D_rdw8p")
+
+[node name="TV 5 - Tawny Owl" parent="." instance=ExtResource("24_cktin")]
+transform = Transform3D(0.00264884, 0, 0.00140841, 0, 0.003, 0, -0.00140841, 0, 0.00264884, -34.8, 0.8, -2.2)
+
+[node name="Tv object 5" type="MeshInstance3D" parent="TV 5 - Tawny Owl"]
+transform = Transform3D(1.66667, 0, -9.27271e-08, 0, 1.66667, 0, 9.27271e-08, 0, 1.66667, 0, 0.999969, 209.6)
+mesh = SubResource("PlaneMesh_01bik")
+surface_material_override/0 = SubResource("StandardMaterial3D_rjwxj")
+
+[node name="SubViewport" type="SubViewport" parent="TV 5 - Tawny Owl/Tv object 5"]
+size = Vector2i(1920, 1080)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="TV 5 - Tawny Owl/Tv object 5/SubViewport"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TV Video 5" type="VideoStreamPlayer" parent="TV 5 - Tawny Owl/Tv object 5/SubViewport/SubViewportContainer"]
+layout_mode = 2
+stream = SubResource("VideoStreamTheora_7l5rd")
+script = ExtResource("34_w048d")
+
+[node name="TV Area 5" type="Area3D" parent="TV 5 - Tawny Owl"]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, 0, 333.333)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TV 5 - Tawny Owl/TV Area 5"]
+transform = Transform3D(1, 0, -8.88178e-16, 0, 1, 0, 8.88178e-16, 0, 1, 0, 333.333, 1166.67)
+shape = SubResource("CylinderShape3D_rdw8p")
+
+[node name="TV 6 - Wolf" parent="." instance=ExtResource("24_cktin")]
+transform = Transform3D(0.00299116, 0, 0.000230157, 0, 0.003, 0, -0.000230157, 0, 0.00299116, -26.5, 0.8, -66)
+
+[node name="Tv object 6" type="MeshInstance3D" parent="TV 6 - Wolf"]
+transform = Transform3D(1.66667, 0, -9.27271e-08, 0, 1.66667, 0, 9.27271e-08, 0, 1.66667, 0, 0.999969, 209.6)
+mesh = SubResource("PlaneMesh_01bik")
+surface_material_override/0 = SubResource("StandardMaterial3D_mb0ou")
+
+[node name="SubViewport" type="SubViewport" parent="TV 6 - Wolf/Tv object 6"]
+size = Vector2i(1920, 1080)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="TV 6 - Wolf/Tv object 6/SubViewport"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TV Video 6" type="VideoStreamPlayer" parent="TV 6 - Wolf/Tv object 6/SubViewport/SubViewportContainer"]
+layout_mode = 2
+stream = SubResource("VideoStreamTheora_tae3t")
+script = ExtResource("35_ejkp4")
+
+[node name="TV Area 6" type="Area3D" parent="TV 6 - Wolf"]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, 0, 333.333)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TV 6 - Wolf/TV Area 6"]
+transform = Transform3D(1, 0, -8.88178e-16, 0, 1, 0, 8.88178e-16, 0, 1, 0, 333.333, 1166.67)
+shape = SubResource("CylinderShape3D_rdw8p")
+
+[node name="TV 7 - Final" parent="." instance=ExtResource("24_cktin")]
+transform = Transform3D(0.0026848, 0, 0.00133859, 0, 0.003, 0, -0.00133859, 0, 0.0026848, 26.2, 0.8, -78.5)
+
+[node name="Tv object 7" type="MeshInstance3D" parent="TV 7 - Final"]
+transform = Transform3D(1.66667, 0, -9.27271e-08, 0, 1.66667, 0, 9.27271e-08, 0, 1.66667, 0, 0.999969, 209.6)
+mesh = SubResource("PlaneMesh_01bik")
+surface_material_override/0 = SubResource("StandardMaterial3D_qe3mj")
+
+[node name="SubViewport" type="SubViewport" parent="TV 7 - Final/Tv object 7"]
+size = Vector2i(1920, 1080)
+
+[node name="SubViewportContainer" type="SubViewportContainer" parent="TV 7 - Final/Tv object 7/SubViewport"]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TV Video 7" type="VideoStreamPlayer" parent="TV 7 - Final/Tv object 7/SubViewport/SubViewportContainer"]
+layout_mode = 2
+stream = SubResource("VideoStreamTheora_midwt")
+script = ExtResource("36_6l4dm")
+
+[node name="TV Area 7" type="Area3D" parent="TV 7 - Final"]
+transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, 0, 333.333)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="TV 7 - Final/TV Area 7"]
+transform = Transform3D(1, 0, -8.88178e-16, 0, 1, 0, 8.88178e-16, 0, 1, 0, 333.333, 1166.67)
+shape = SubResource("CylinderShape3D_rdw8p")
+
 [connection signal="finished" from="TV 1 - Start/Tv object 1/SubViewport/SubViewportContainer/TV Video 1" to="TV 1 - Start/Tv object 1/SubViewport/SubViewportContainer/TV Video 1" method="_on_finished"]
 [connection signal="finished" from="TV 1 - Start/Tv object 1/SubViewport/SubViewportContainer/TV Video 1" to="Watched" method="_on_tv_video_1_finished"]
 [connection signal="body_entered" from="TV 1 - Start/TV Area 1" to="TV 1 - Start/Tv object 1/SubViewport/SubViewportContainer/TV Video 1" method="_on_tv_area_1_body_entered"]
@@ -2470,3 +2701,23 @@ shape = SubResource("CylinderShape3D_rdw8p")
 [connection signal="finished" from="TV 2 - Fox/Tv object 2/SubViewport/SubViewportContainer/TV Video 2" to="TV 2 - Fox/Tv object 2/SubViewport/SubViewportContainer/TV Video 2" method="_on_finished"]
 [connection signal="body_entered" from="TV 2 - Fox/TV Area 2" to="TV 2 - Fox/Tv object 2/SubViewport/SubViewportContainer/TV Video 2" method="_on_tv_area_2_body_entered"]
 [connection signal="body_exited" from="TV 2 - Fox/TV Area 2" to="TV 2 - Fox/Tv object 2/SubViewport/SubViewportContainer/TV Video 2" method="_on_tv_area_2_body_exited"]
+[connection signal="finished" from="TV 3 - Hare/Tv object 3/SubViewport/SubViewportContainer/TV Video 3" to="Watched" method="_on_tv_video_3_finished"]
+[connection signal="finished" from="TV 3 - Hare/Tv object 3/SubViewport/SubViewportContainer/TV Video 3" to="TV 3 - Hare/Tv object 3/SubViewport/SubViewportContainer/TV Video 3" method="_on_finished"]
+[connection signal="body_entered" from="TV 3 - Hare/TV Area 3" to="TV 3 - Hare/Tv object 3/SubViewport/SubViewportContainer/TV Video 3" method="_on_tv_area_3_body_entered"]
+[connection signal="body_exited" from="TV 3 - Hare/TV Area 3" to="TV 3 - Hare/Tv object 3/SubViewport/SubViewportContainer/TV Video 3" method="_on_tv_area_3_body_exited"]
+[connection signal="finished" from="TV 4 - Robin/Tv object 4/SubViewport/SubViewportContainer/TV Video 4" to="Watched" method="_on_tv_video_4_finished"]
+[connection signal="finished" from="TV 4 - Robin/Tv object 4/SubViewport/SubViewportContainer/TV Video 4" to="TV 4 - Robin/Tv object 4/SubViewport/SubViewportContainer/TV Video 4" method="_on_finished"]
+[connection signal="body_entered" from="TV 4 - Robin/TV Area 4" to="TV 4 - Robin/Tv object 4/SubViewport/SubViewportContainer/TV Video 4" method="_on_tv_area_4_body_entered"]
+[connection signal="body_exited" from="TV 4 - Robin/TV Area 4" to="TV 4 - Robin/Tv object 4/SubViewport/SubViewportContainer/TV Video 4" method="_on_tv_area_4_body_exited"]
+[connection signal="finished" from="TV 5 - Tawny Owl/Tv object 5/SubViewport/SubViewportContainer/TV Video 5" to="Watched" method="_on_tv_video_5_finished"]
+[connection signal="finished" from="TV 5 - Tawny Owl/Tv object 5/SubViewport/SubViewportContainer/TV Video 5" to="TV 5 - Tawny Owl/Tv object 5/SubViewport/SubViewportContainer/TV Video 5" method="_on_finished"]
+[connection signal="body_entered" from="TV 5 - Tawny Owl/TV Area 5" to="TV 5 - Tawny Owl/Tv object 5/SubViewport/SubViewportContainer/TV Video 5" method="_on_tv_area_5_body_entered"]
+[connection signal="body_exited" from="TV 5 - Tawny Owl/TV Area 5" to="TV 5 - Tawny Owl/Tv object 5/SubViewport/SubViewportContainer/TV Video 5" method="_on_tv_area_5_body_exited"]
+[connection signal="finished" from="TV 6 - Wolf/Tv object 6/SubViewport/SubViewportContainer/TV Video 6" to="Watched" method="_on_tv_video_6_finished"]
+[connection signal="finished" from="TV 6 - Wolf/Tv object 6/SubViewport/SubViewportContainer/TV Video 6" to="TV 6 - Wolf/Tv object 6/SubViewport/SubViewportContainer/TV Video 6" method="_on_finished"]
+[connection signal="body_entered" from="TV 6 - Wolf/TV Area 6" to="TV 6 - Wolf/Tv object 6/SubViewport/SubViewportContainer/TV Video 6" method="_on_tv_area_6_body_entered"]
+[connection signal="body_exited" from="TV 6 - Wolf/TV Area 6" to="TV 6 - Wolf/Tv object 6/SubViewport/SubViewportContainer/TV Video 6" method="_on_tv_area_6_body_exited"]
+[connection signal="finished" from="TV 7 - Final/Tv object 7/SubViewport/SubViewportContainer/TV Video 7" to="Watched" method="_on_tv_video_7_finished"]
+[connection signal="finished" from="TV 7 - Final/Tv object 7/SubViewport/SubViewportContainer/TV Video 7" to="TV 7 - Final/Tv object 7/SubViewport/SubViewportContainer/TV Video 7" method="_on_finished"]
+[connection signal="body_entered" from="TV 7 - Final/TV Area 7" to="TV 7 - Final/Tv object 7/SubViewport/SubViewportContainer/TV Video 7" method="_on_tv_area_7_body_entered"]
+[connection signal="body_exited" from="TV 7 - Final/TV Area 7" to="TV 7 - Final/Tv object 7/SubViewport/SubViewportContainer/TV Video 7" method="_on_tv_area_7_body_exited"]
