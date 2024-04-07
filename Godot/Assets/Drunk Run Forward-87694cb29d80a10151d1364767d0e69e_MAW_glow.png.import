@@ -1,0 +1,36 @@
+[remap]
+
+importer="texture"
+type="CompressedTexture2D"
+uid="uid://vx6rafofip6d"
+path.s3tc="res://.godot/imported/Drunk Run Forward-87694cb29d80a10151d1364767d0e69e_MAW_glow.png-0dfaebd0b1de255d7a8eeca48c943588.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
+generator_parameters={}
+
+[deps]
+
+source_file="res://Godot/Assets/Drunk Run Forward-87694cb29d80a10151d1364767d0e69e_MAW_glow.png"
+dest_files=["res://.godot/imported/Drunk Run Forward-87694cb29d80a10151d1364767d0e69e_MAW_glow.png-0dfaebd0b1de255d7a8eeca48c943588.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+compress/high_quality=false
+compress/lossy_quality=0.7
+compress/hdr_compression=1
+compress/normal_map=0
+compress/channel_pack=0
+mipmaps/generate=true
+mipmaps/limit=-1
+roughness/mode=0
+roughness/src_normal=""
+process/fix_alpha_border=true
+process/premult_alpha=false
+process/normal_map_invert_y=false
+process/hdr_as_srgb=false
+process/hdr_clamp_exposure=false
+process/size_limit=0
+detect_3d/compress_to=0

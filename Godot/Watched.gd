@@ -27,3 +27,6 @@ func _on_tv_video_6_finished():
 
 func _on_tv_video_7_finished():
 	watched += 1
+
+func _on_tv_video_8_finished():
+	watched += 1
