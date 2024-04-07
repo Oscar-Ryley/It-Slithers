@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bji8t88idr2sd"
+path="res://.godot/imported/Quid Me Perturbes.mp3-7d9021c620eae71e99b61425a1669ec8.mp3str"
+
+[deps]
+
+source_file="res://Background SFX/Quid Me Perturbes.mp3"
+dest_files=["res://.godot/imported/Quid Me Perturbes.mp3-7d9021c620eae71e99b61425a1669ec8.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

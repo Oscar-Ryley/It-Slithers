@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bhj3uc7nb5c6d"
+path="res://.godot/imported/Peregre Abeo.mp3-108333d7b31b833a23dfce1f5eb99644.mp3str"
+
+[deps]
+
+source_file="res://Background SFX/Peregre Abeo.mp3"
+dest_files=["res://.godot/imported/Peregre Abeo.mp3-108333d7b31b833a23dfce1f5eb99644.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

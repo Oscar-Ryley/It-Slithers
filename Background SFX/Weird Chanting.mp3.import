@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c7fntas5ibde8"
+path="res://.godot/imported/Weird Chanting.mp3-3a99f330481641a0c2ce3e9aa4a276ae.mp3str"
+
+[deps]
+
+source_file="res://Background SFX/Weird Chanting.mp3"
+dest_files=["res://.godot/imported/Weird Chanting.mp3-3a99f330481641a0c2ce3e9aa4a276ae.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=1.0
+beat_count=1
+bar_beats=4

@@ -1,4 +1,4 @@
-[gd_scene load_steps=93 format=3 uid="uid://vhdko8l17uv"]
+[gd_scene load_steps=95 format=3 uid="uid://vhdko8l17uv"]
 
 [ext_resource type="Texture2D" uid="uid://du0tmc1cn7605" path="res://Godot/Floor Texture/brown_mud_leaves_01_diff_4k.png" id="1_h5mbe"]
 [ext_resource type="PackedScene" uid="uid://ceqtj0h8xlikr" path="res://Godot/3D Models/Trees/pine_tree/pine_tree.gltf" id="1_ikqqh"]
@@ -35,7 +35,9 @@
 [ext_resource type="Script" path="res://Godot/TV Video 6.gd" id="35_ejkp4"]
 [ext_resource type="Script" path="res://Godot/TV Video 7.gd" id="36_6l4dm"]
 [ext_resource type="Script" path="res://Godot/TV Video 8.gd" id="36_taqxc"]
+[ext_resource type="AudioStream" uid="uid://d7ugksbx4wou" path="res://Background SFX/It Slithers Background Track.mp3" id="37_7odhf"]
 [ext_resource type="PackedScene" uid="uid://c14u0opgl7l2b" path="res://Godot/Assets/Drunk Run Forward.fbx" id="37_kdlpt"]
+[ext_resource type="AudioStream" uid="uid://c7fntas5ibde8" path="res://Background SFX/Weird Chanting.mp3" id="38_kxv7y"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_r2lmd"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -2723,6 +2725,7 @@ shape = SubResource("CylinderShape3D_rdw8p")
 
 [node name="Enemy" parent="." instance=ExtResource("37_kdlpt")]
 transform = Transform3D(0.0392655, 0, 1.49949, 0, 1.5, 0, -1.49949, 0, 0.0392655, -12.8, 0, -80.6)
+visible = false
 
 [node name="Skeleton3D" parent="Enemy/RootNode" index="0"]
 bones/0/position = Vector3(-0.0963769, 0.766874, 2.29434)
@@ -2773,8 +2776,22 @@ bones/57/rotation = Quaternion(-0.685051, 0.0909154, -0.0169319, 0.722601)
 bones/58/rotation = Quaternion(0.738497, 0.146231, -0.082717, 0.652991)
 bones/59/rotation = Quaternion(0.378258, 0.130388, 0.0211659, 0.916227)
 
-[connection signal="finished" from="TV 1 - Start/Tv object 1/SubViewport/SubViewportContainer/TV Video 1" to="TV 1 - Start/Tv object 1/SubViewport/SubViewportContainer/TV Video 1" method="_on_finished"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("37_7odhf")
+volume_db = -10.0
+autoplay = true
+mix_target = 1
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+transform = Transform3D(0.766044, 0, 0.642788, 0, -1, 0, -0.642788, 0, 0.766044, 48, 2, 83.9)
+stream = ExtResource("38_kxv7y")
+volume_db = -10.0
+max_db = 0.0
+autoplay = true
+max_distance = 40.0
+
 [connection signal="finished" from="TV 1 - Start/Tv object 1/SubViewport/SubViewportContainer/TV Video 1" to="Watched" method="_on_tv_video_1_finished"]
+[connection signal="finished" from="TV 1 - Start/Tv object 1/SubViewport/SubViewportContainer/TV Video 1" to="TV 1 - Start/Tv object 1/SubViewport/SubViewportContainer/TV Video 1" method="_on_finished"]
 [connection signal="body_entered" from="TV 1 - Start/TV Area 1" to="TV 1 - Start/Tv object 1/SubViewport/SubViewportContainer/TV Video 1" method="_on_tv_area_1_body_entered"]
 [connection signal="body_exited" from="TV 1 - Start/TV Area 1" to="TV 1 - Start/Tv object 1/SubViewport/SubViewportContainer/TV Video 1" method="_on_tv_area_1_body_exited"]
 [connection signal="finished" from="TV 2 - Fox/Tv object 2/SubViewport/SubViewportContainer/TV Video 2" to="Watched" method="_on_tv_video_2_finished"]
