@@ -335,6 +335,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.572535, 0)
 [node name="Camera3D" type="Camera3D" parent="Player/Neck"]
 fov = 60.0
 
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="Player"]
+stream = ExtResource("37_7odhf")
+volume_db = -10.0
+max_db = -10.0
+autoplay = true
+
 [node name="World Border" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="World Border"]
@@ -2739,12 +2745,6 @@ transform = Transform3D(1, 0, 1.06581e-14, 0, 1, 0, -1.06581e-14, 0, 1, 0, 0, 33
 [node name="CollisionShape3D" type="CollisionShape3D" parent="TV 8 - End/TV Area 8"]
 transform = Transform3D(1, 0, -8.88178e-16, 0, 1, 0, 8.88178e-16, 0, 1, 0, 333.333, 1166.67)
 shape = SubResource("CylinderShape3D_rdw8p")
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("37_7odhf")
-volume_db = -10.0
-autoplay = true
-mix_target = 1
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 transform = Transform3D(0.766044, 0, 0.642788, 0, -1, 0, -0.642788, 0, 0.766044, 48, 2, 83.9)
