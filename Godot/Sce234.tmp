@@ -6,8 +6,8 @@
 [ext_resource type="Script" path="res://Godot/Player.gd" id="1_mjpwb"]
 [ext_resource type="Texture2D" uid="uid://bno11b6q88igq" path="res://Godot/Floor Texture/brown_mud_leaves_01_nor_gl_4k.png" id="2_oq70o"]
 [ext_resource type="Script" path="res://Godot/Win Text.gd" id="3_hhda2"]
+[ext_resource type="Texture2D" uid="uid://bgmsobj20vtro" path="res://Godot/Assets/Circle.png" id="3_qjobi"]
 [ext_resource type="Texture2D" uid="uid://i5wb1aee5uce" path="res://Godot/Floor Texture/brown_mud_leaves_01_rough_4k.png" id="3_rn6aq"]
-[ext_resource type="Texture2D" uid="uid://cjuxfu44cryxf" path="res://Godot/Assets/Win Screen.png" id="4_rjgsp"]
 [ext_resource type="Texture2D" uid="uid://bfb4p8o3jsbqa" path="res://Godot/Assets/Death Screen.png" id="5_7ovsc"]
 [ext_resource type="PackedScene" uid="uid://c0tq6tq44nkow" path="res://Godot/3D Models/Structures (Buildings)/abandoned_house/ahouse.gltf" id="5_deoi7"]
 [ext_resource type="Script" path="res://Godot/Lose Text.gd" id="5_opnu3"]
@@ -285,8 +285,7 @@ texture = ExtResource("29_qvdre")
 
 [node name="Win Text" type="Sprite2D" parent="."]
 position = Vector2(578, 326)
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("4_rjgsp")
+texture = ExtResource("3_qjobi")
 script = ExtResource("3_hhda2")
 
 [node name="Lose Screen" type="Sprite2D" parent="."]

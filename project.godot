@@ -15,6 +15,10 @@ run/main_scene="res://Godot/Scene.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://Godot/icon.svg"
 
+[autoload]
+
+Global="*res://Godot/Global.gd"
+
 [input]
 
 Forward={
